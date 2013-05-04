@@ -1,0 +1,200 @@
+!!!
+html
+  head
+    meta(content='text/html; charset=UTF-8', http-equiv='Content-Type')
+    title 求室友
+    link(rel="stylesheet", href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/css/bootstrap.min.css")
+    link(rel="stylesheet", href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/3.0.2/css/font-awesome.min.css")
+    link(rel="stylesheet", href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.min.css")
+    //if IE 7
+      link(rel="stylesheet", href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/3.0.2/css/font-awesome-ie7.min.css")
+
+  body
+    :stylus
+      body
+        min-width 1070px
+        padding-top 20px
+
+      .overview
+        position relative
+        width 1024px
+        height 768px
+        img
+          width 1024px
+          height 768px
+        a
+          color black
+          display block
+          .tip
+            display none
+      .overview i.ie6,.overviewtip i.ie6
+        display none!important
+        display inline
+    .container-fluid
+      .hero-unit
+        h1 求室友
+
+      .well
+        h2 房屋信息
+
+        ul
+          li 房型: 两室一厅
+          li 面积: 90平米
+          li 月租金: 3000 （我们俩平摊）
+
+        h3 交通、位置
+
+        ul
+          li 从楼上下来走到上海西站地铁站(11号线)/上海西站公交站大约5分钟，走到陆家巷公交站大约3分钟。
+          li 公交车：  01路 106路 129路 319路 742路 768路 944路 长征1路
+
+        iframe(width='100%', height='450', frameborder='0', scrolling='no', marginheight='0', marginwidth='0', src='http://ditu.google.cn/maps?f=q&source=s_q&hl=zh-CN&geocode=&q=%E8%BD%A6%E7%AB%99%E6%96%B0%E6%9D%91%E5%8D%97%E9%97%A8&aq=&sll=35.86166,104.195397&sspn=54.816259,109.951172&t=v&brcurrent=3,0x35b26f13e36afd27:0x314ea8336d830eaa,0%3B5,0,0&ie=UTF8&hq=%E8%BD%A6%E7%AB%99%E6%96%B0%E6%9D%91%E5%8D%97%E9%97%A8&hnear=&ll=31.259582,121.402431&spn=0.115357,0.214748&z=11&iwloc=A&cid=15275883616943889468&output=embed')
+        br
+        small
+          a(href='http://ditu.google.cn/maps?f=q&source=embed&hl=zh-CN&geocode=&q=%E8%BD%A6%E7%AB%99%E6%96%B0%E6%9D%91%E5%8D%97%E9%97%A8&aq=&sll=35.86166,104.195397&sspn=54.816259,109.951172&t=v&brcurrent=3,0x35b26f13e36afd27:0x314ea8336d830eaa,0%3B5,0,0&ie=UTF8&hq=%E8%BD%A6%E7%AB%99%E6%96%B0%E6%9D%91%E5%8D%97%E9%97%A8&hnear=&ll=31.259582,121.402431&spn=0.115357,0.214748&z=11&iwloc=A&cid=15275883616943889468', style='color: #0000FF; text-align: left;') 查看大图
+
+        h3 室内平面图/照片
+
+        p.overviewtip 备注：点击
+          i.icon-camera.icon-2x
+          i.ie6 ●
+          |符号可查看照片
+
+        .overview
+          img(src='overview.jpg')
+          a(href='01.jpg',rel='overview',data-x=200,data-y=310,data-face=50)
+            span.tip 大房间：我目前住在房间里，衣柜的一个门掉了。
+            i.icon-camera.icon-2x
+            i.ie6 ●
+          a(href='02.jpg',rel='overview',data-x=370,data-y=190,data-face=240)
+            span.tip 大房间：两个房间里都有空调
+            i.icon-camera.icon-2x
+            i.ie6 ●
+          a(href='03.jpg',rel='overview',data-x=400,data-y=300,data-face=310)
+            span.tip 大房间：我不看电视，所以把房东的老电视机放在角落，电视服务也停了，如果你想看电视，可以把它拿到你的房间里去。
+            i.icon-camera.icon-2x
+            i.ie6 ●
+          a(href='04.jpg',rel='overview',data-x=450,data-y=310,data-face=50)
+            span.tip 小房间
+            i.icon-camera.icon-2x
+            i.ie6 ●
+          a(href='05.jpg',rel='overview',data-x=450,data-y=195,data-face=130)
+            span.tip 小房间
+            i.icon-camera.icon-2x
+            i.ie6 ●
+          a(href='06.jpg',rel='overview',data-x=560,data-y=200,data-face=240)
+            span.tip 小房间的衣柜比较新，挺漂亮
+            i.icon-camera.icon-2x
+            i.ie6 ●
+          a(href='07.jpg',rel='overview',data-x=600,data-y=350,data-face=250)
+            span.tip 整个屋子的地板比较旧，而且还有我住进来以前的租客留下的”印记“，但是我经常打扫，所以还是挺干净的，可以不用穿拖鞋。
+            i.icon-camera.icon-2x
+            i.ie6 ●
+          a(href='08.jpg',rel='overview',data-x=400,data-y=350,data-face=140)
+            span.tip 又掉了一个门的大鞋柜和吧台
+            i.icon-camera.icon-2x
+            i.ie6 ●
+          a(href='09.jpg',rel='overview',data-x=450,data-y=580,data-face=320)
+            span.tip 客厅被我布局成个迷你办公室啦！
+            i.icon-camera.icon-2x
+            i.ie6 ●
+          a(href='10.jpg',rel='overview',data-x=360,data-y=350,data-face=230)
+            span.tip  客厅被我布局成个迷你办公室啦！
+            i.icon-camera.icon-2x
+            i.ie6 ●
+          a(href='11.jpg',rel='overview',data-x=200,data-y=465,data-face=90)
+            span.tip  客厅还剩下很多空间
+            i.icon-camera.icon-2x
+            i.ie6 ●
+          a(href='12.jpg',rel='overview',data-x=200,data-y=580,data-face=340)
+            span.tip 大阳台
+            i.icon-camera.icon-2x
+            i.ie6 ●
+          a(href='13.jpg',rel='overview',data-x=160,data-y=385,data-face=190)
+            span.tip 大阳台
+            i.icon-camera.icon-2x
+            i.ie6 ●
+          a(href='14.jpg',rel='overview',data-x=90,data-y=455,data-face=350)
+            span.tip 从大阳台往外看：南边邻一条小路，这条路到这里正好是尽头，走不通，所以路上只有挺着的车，晨练的人，很安静。
+            i.icon-camera.icon-2x
+            i.ie6 ●
+          a(href='15.jpg',rel='overview',data-x=630,data-y=390,data-face=80)
+            span.tip 卫生间
+            i.icon-camera.icon-2x
+            i.ie6 ●
+          a(href='16.jpg',rel='overview',data-x=630,data-y=350,data-face=135)
+            span.tip 卫生间，卫生间里有一个电热水器
+            i.icon-camera.icon-2x
+            i.ie6 ●
+          a(href='17.jpg',rel='overview',data-x=740,data-y=390,data-face=240)
+            span.tip 卫生间
+            i.icon-camera.icon-2x
+            i.ie6 ●
+          a(href='18.jpg',rel='overview',data-x=605,data-y=290,data-face=90)
+            span.tip 厨房，厨房旁边还有一个小阳台，如果你抽烟可以在这里抽
+            i.icon-camera.icon-2x
+            i.ie6 ●
+          a(href='19.jpg',rel='overview',data-x=810,data-y=310,data-face=280)
+            span.tip 厨房
+            i.icon-camera.icon-2x
+            i.ie6 ●
+          a(href='20.jpg',rel='overview',data-x=800,data-y=280,data-face=180)
+            span.tip 洗衣机在小阳台的尽头，所以可以把衣服晾在这里
+            i.icon-camera.icon-2x
+            i.ie6 ●
+          a(href='21.jpg',rel='overview',data-x=820,data-y=340,data-face=170)
+            span.tip 小阳台外有一个架子，可以放一些花草，可惜我暂时还没时间折腾
+            i.icon-camera.icon-2x
+            i.ie6 ●
+          a(href='22.jpg',rel='overview',data-x=800,data-y=250,data-face=10)
+            span.tip 从小阳台窗户看邻居家，他们就在那里折腾了一大堆花草
+            i.icon-camera.icon-2x
+            i.ie6 ●
+      .well
+        h2 室友信息
+        h3 我
+        ul
+          li 90后，男，湖北人，软件工程师
+          li 不抽烟不酗酒
+          li 爱干净讲卫生
+          li 早睡早期
+          li 不会经常有朋友来访
+        h3 希望你（们）……
+        ul
+          li 30岁以下
+          li 一个人或者一对儿
+          li 不酗酒、无不良嗜好
+          li 不在屋里抽烟（可以到小阳台上抽）
+          li 喜欢一个安静的生活环境
+          li 讲卫生，至少向我看齐
+          li 可以带宠物一起入住
+      .well
+        h2 怎样联系我
+        p 你可以给我发送电子邮件： layerssss(at)gmail.com，或者通过QQ给我留言： 282 487 299
+
+
+
+
+
+
+
+
+    script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js")
+    script(src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/js/bootstrap.min.js")
+    script(src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.pack.min.js")
+    script(src="//cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js")
+    :coffee
+      $ ->
+        $('.overview>a').each (i,e)->
+          left = (Number $(e).attr 'data-x')||0
+          top = (Number $(e).attr 'data-y')||i * 30
+          face = (Number $(e).attr 'data-face')||0
+          $(e).attr
+            title: $(e).text()
+          $(e).css
+            position: 'absolute'
+            left: left
+            top: top
+            transform: "rotate(#{face}deg)"
+          $(e).css 'z-index', 100
+        $('.overview>a').fancybox()
